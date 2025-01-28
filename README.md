@@ -1,3 +1,6 @@
+#repo
+[text](https://github.com/pleabargain/remark-html-test)
+
 # Remark.js Problem Solving Presentation
 
 A presentation system built with Remark.js that demonstrates strategic problem-solving approaches through interactive slides and diagrams.
