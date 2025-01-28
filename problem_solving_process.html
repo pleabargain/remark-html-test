@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Strategic Problem Solving</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      
+      .probability-high { color: #2ecc71; }
+      .probability-medium { color: #f1c40f; }
+      .probability-low { color: #e74c3c; }
+      
+      .two-column {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .column {
+        flex: 45%;
+        padding: 0 2%;
+      }
+
+      .impact-matrix {
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      
+      .impact-matrix td {
+        border: 1px solid #333;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .highlight {
+        background-color: #f1f8ff;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .framework-diagram {
+        width: 100%;
+        max-width: 900px;
+        margin: 20px auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+<!-- Note: Mermaid diagrams do not work with Remark. Use generated SVG instead for graphs and diagrams -->
+
+class: center, middle
+
+# Strategic Problem Solving
+## A Probability-Based Approach
+
+---
+
+# Overview
+
+1. Understanding Problem-Solving Framework
+2. The Role of Probability
+3. Decision Making Process
+4. Practical Implementation
+5. Case Studies
+
+---
+
+# Decision Making Process
+
+.center[
+## <a href="problem-solving-diagram.svg" target="_blank" style="color: #007bff; text-decoration: none; padding: 10px; border: 2px solid #007bff; border-radius: 5px;">Click here to view the full diagram in a new window</a>
+]
+
+---
+
+# Problem Solving Fundamentals
+
+.two-column[
+.column[
+## Key Components
+- Clear problem definition
+- Systematic approach
+- Data-driven decisions
+- Iterative process
+- Continuous evaluation
+]
+
+.column[
+## Core Skills
+- Critical thinking
+- Analysis
+- Creativity
+- Decision making
+- Implementation
+]
+]
+
+---
+
+# Problem Analysis Techniques
+
+.center[
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" class="framework-diagram">
+  <!-- Fishbone/Ishikawa Diagram -->
+  <line x1="100" y1="200" x2="800" y2="200" stroke="#333" stroke-width="3"/>
+  
+  <!-- Main Problem Box -->
+  <rect x="750" y="170" width="120" height="60" rx="5" fill="#f8d7da" stroke="#333" stroke-width="2"/>
+  <text x="810" y="205" text-anchor="middle" font-family="Arial" font-size="14">Problem</text>
+  
+  <!-- Categories and Causes -->
+  <!-- People -->
+  <line x1="200" y1="100" x2="300" y2="200" stroke="#333" stroke-width="2"/>
+  <text x="180" y="90" text-anchor="middle" font-family="Arial" font-size="14">People</text>
+  <text x="220" y="130" text-anchor="middle" font-family="Arial" font-size="12">Training</text>
+  <text x="250" y="150" text-anchor="middle" font-family="Arial" font-size="12">Skills</text>
+  
+  <!-- Process -->
+  <line x1="400" y1="100" x2="500" y2="200" stroke="#333" stroke-width="2"/>
+  <text x="380" y="90" text-anchor="middle" font-family="Arial" font-size="14">Process</text>
+  <text x="420" y="130" text-anchor="middle" font-family="Arial" font-size="12">Procedures</text>
+  <text x="450" y="150" text-anchor="middle" font-family="Arial" font-size="12">Methods</text>
+  
+  <!-- Equipment -->
+  <line x1="600" y1="100" x2="700" y2="200" stroke="#333" stroke-width="2"/>
+  <text x="580" y="90" text-anchor="middle" font-family="Arial" font-size="14">Equipment</text>
+  <text x="620" y="130" text-anchor="middle" font-family="Arial" font-size="12">Tools</text>
+  <text x="650" y="150" text-anchor="middle" font-family="Arial" font-size="12">Technology</text>
+  
+  <!-- Environment -->
+  <line x1="200" y1="300" x2="300" y2="200" stroke="#333" stroke-width="2"/>
+  <text x="180" y="320" text-anchor="middle" font-family="Arial" font-size="14">Environment</text>
+  <text x="220" y="280" text-anchor="middle" font-family="Arial" font-size="12">Location</text>
+  <text x="250" y="260" text-anchor="middle" font-family="Arial" font-size="12">Culture</text>
+  
+  <!-- Materials -->
+  <line x1="400" y1="300" x2="500" y2="200" stroke="#333" stroke-width="2"/>
+  <text x="380" y="320" text-anchor="middle" font-family="Arial" font-size="14">Materials</text>
+  <text x="420" y="280" text-anchor="middle" font-family="Arial" font-size="12">Quality</text>
+  <text x="450" y="260" text-anchor="middle" font-family="Arial" font-size="12">Supply</text>
+  
+  <!-- Management -->
+  <line x1="600" y1="300" x2="700" y2="200" stroke="#333" stroke-width="2"/>
+  <text x="580" y="320" text-anchor="middle" font-family="Arial" font-size="14">Management</text>
+  <text x="620" y="280" text-anchor="middle" font-family="Arial" font-size="12">Planning</text>
+  <text x="650" y="260" text-anchor="middle" font-family="Arial" font-size="12">Control</text>
+</svg>
+]
+
+---
+
+# Solution Generation
+
+.two-column[
+.column[
+## Brainstorming Techniques
+- Individual brainstorming
+- Group sessions
+- Mind mapping
+- SCAMPER method
+]
+
+.column[
+## Decision Matrix
+.impact-matrix[
+|            | Low Impact | High Impact |
+|------------|------------|-------------|
+| Low Effort | Consider | Do First |
+| High Effort| Skip | Plan |
+]
+]
+]
+
+.center[
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" class="framework-diagram">
+  <!-- Decision Tree -->
+  <circle cx="450" cy="50" r="30" fill="#d5f5e3" stroke="#333" stroke-width="2"/>
+  <text x="450" y="55" text-anchor="middle" font-family="Arial" font-size="14">Start</text>
+  
+  <!-- Branches -->
+  <line x1="450" y1="80" x2="300" y2="150" stroke="#333" stroke-width="2"/>
+  <line x1="450" y1="80" x2="600" y2="150" stroke="#333" stroke-width="2"/>
+  
+  <!-- Decision Points -->
+  <circle cx="300" cy="150" r="30" fill="#f4f4f4" stroke="#333" stroke-width="2"/>
+  <text x="300" y="155" text-anchor="middle" font-family="Arial" font-size="14">Option A</text>
+  
+  <circle cx="600" cy="150" r="30" fill="#f4f4f4" stroke="#333" stroke-width="2"/>
+  <text x="600" y="155" text-anchor="middle" font-family="Arial" font-size="14">Option B</text>
+</svg>
+]
+
+---
+
+# Implementation Strategy
+
+.two-column[
+.column[
+## Action Planning
+1. Set clear objectives
+2. Define milestones
+3. Assign responsibilities
+4. Establish timeline
+5. Monitor progress
+]
+
+.column[
+## Resource Allocation
+- Human resources
+- Financial resources
+- Time management
+- Tools and equipment
+]
+]
+
+.center[
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" class="framework-diagram">
+  <!-- Implementation Timeline -->
+  <line x1="100" y1="100" x2="800" y2="100" stroke="#333" stroke-width="3"/>
+  
+  <!-- Milestones -->
+  <circle cx="200" cy="100" r="20" fill="#d5f5e3" stroke="#333" stroke-width="2"/>
+  <text x="200" y="140" text-anchor="middle" font-family="Arial" font-size="14">Plan</text>
+  
+  <circle cx="400" cy="100" r="20" fill="#f4f4f4" stroke="#333" stroke-width="2"/>
+  <text x="400" y="140" text-anchor="middle" font-family="Arial" font-size="14">Execute</text>
+  
+  <circle cx="600" cy="100" r="20" fill="#f4f4f4" stroke="#333" stroke-width="2"/>
+  <text x="600" y="140" text-anchor="middle" font-family="Arial" font-size="14">Monitor</text>
+  
+  <circle cx="800" cy="100" r="20" fill="#d6eaf8" stroke="#333" stroke-width="2"/>
+  <text x="800" y="140" text-anchor="middle" font-family="Arial" font-size="14">Complete</text>
+</svg>
+]
+
+---
+
+# Evaluation Methods
+
+.two-column[
+.column[
+## Success Metrics
+- Quantitative measures
+- Qualitative feedback
+- Timeline adherence
+- Resource utilization
+- Impact assessment
+]
+
+.column[
+## Feedback Loops
+- Regular reviews
+- Stakeholder input
+- Performance data
+- Lessons learned
+- Continuous improvement
+]
+]
+
+.center[
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" class="framework-diagram">
+  <!-- Circular Evaluation Process -->
+  <circle cx="450" cy="100" r="80" fill="none" stroke="#333" stroke-width="3"/>
+  
+  <!-- Evaluation Points -->
+  <circle cx="450" cy="20" r="20" fill="#d5f5e3" stroke="#333" stroke-width="2"/>
+  <text x="450" y="25" text-anchor="middle" font-family="Arial" font-size="14">Plan</text>
+  
+  <circle cx="530" cy="100" r="20" fill="#f4f4f4" stroke="#333" stroke-width="2"/>
+  <text x="530" y="105" text-anchor="middle" font-family="Arial" font-size="14">Do</text>
+  
+  <circle cx="450" cy="180" r="20" fill="#f4f4f4" stroke="#333" stroke-width="2"/>
+  <text x="450" y="185" text-anchor="middle" font-family="Arial" font-size="14">Check</text>
+  
+  <circle cx="370" cy="100" r="20" fill="#d6eaf8" stroke="#333" stroke-width="2"/>
+  <text x="370" y="105" text-anchor="middle" font-family="Arial" font-size="14">Act</text>
+  
+  <!-- Arrows -->
+  <path d="M 450 40 A 60 60 0 0 1 510 100" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 510 100 A 60 60 0 0 1 450 160" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 450 160 A 60 60 0 0 1 390 100" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 390 100 A 60 60 0 0 1 450 40" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+</svg>
+]
+
+---
+
+## thank you
+
+questions?
+---
+
+
+
+
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+      var slideshow = remark.create({
+        ratio: '16:9',
+        highlightStyle: 'github',
+        highlightLines: true,
+        navigation: {
+          scroll: true,
+          touch: true,
+          click: true
+        }
+      });
+    </script>
+  </body>
+</html>
