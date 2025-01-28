@@ -2,16 +2,26 @@
 
 A collection of interactive presentations built with Remark.js covering various topics from problem-solving approaches to modern language usage and life skills.
 
-## Project Structure
+## Content Categories
 
+### Business & Investment
+- `web3_investor_questions.html` - Critical questions and case studies for Web3 investment evaluation
+- `software_development_startup_phases.html` - Guide to different phases in software startup development
+
+### Educational
+- `problem_solving_process.html` - Strategic problem-solving approaches and methodologies
+- `problemsolvingmermaid.md` - Source file containing Mermaid diagram syntax
+- `problem-solving-diagram.svg` - Generated SVG from Mermaid diagram
+
+### Language & Communication
 - `modern_slang_guide.html` - Interactive guide to modern slang and terminology
 - `phrases_used_in_daily_life.html` - Common phrases and their usage in everyday situations
-- `problem_solving_process.html` - Strategic problem-solving approaches and methodologies
-- `software_development_startup_phases.html` - Guide to different phases in software startup development
+
+### Life Skills
 - `ten_slides_about_life_stuff.html` - Collection of life-related topics and insights
-- `problemsolvingmermaid.md` - Source file containing Mermaid diagram syntax
+
+### Technical Files
 - `convert-mermaid.js` - Script to convert Mermaid diagrams to SVG
-- `problem-solving-diagram.svg` - Generated SVG from Mermaid diagram
 - `package.json` - Project dependencies and configuration
 
 ## Important Note About Mermaid
@@ -49,11 +59,22 @@ node convert-mermaid.js
 
 ## Presentation Features
 
-- Responsive design with custom styling
-- Two-column layouts for content organization
-- Custom SVG diagrams for visualization
-- Interactive navigation
-- Mobile-friendly interface
+- Content Organization
+  - Two-column layouts for content organization
+  - Question-and-answer format with highlighted sections
+  - Warning blocks for important cautions
+  - External reference links to source materials
+
+- Visual Design
+  - Responsive design with custom styling
+  - Custom SVG diagrams for visualization
+  - Distinct styling for questions and examples
+  - Color-coded sections for different content types
+
+- Interaction
+  - Interactive navigation
+  - Mobile-friendly interface
+  - External link handling in new tabs
 
 ## Technical Details
 
@@ -67,10 +88,13 @@ node convert-mermaid.js
 
 The presentations include custom CSS for:
 - Content organization and layout
-- Visual hierarchy
-- Interactive elements
-- Responsive design
-- Highlighted sections
+- Visual hierarchy with distinct section types:
+  - Question blocks with blue accent
+  - Example blocks with red accent
+  - Warning sections with attention markers
+- Interactive elements and hover states
+- Responsive design for all screen sizes
+- External link formatting
 
 ## Viewing the Presentations
 
