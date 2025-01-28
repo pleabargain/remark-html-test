@@ -1,13 +1,14 @@
-#repo
-[text](https://github.com/pleabargain/remark-html-test)
+# Remark.js Presentation Collection
 
-# Remark.js Problem Solving Presentation
-
-A presentation system built with Remark.js that demonstrates strategic problem-solving approaches through interactive slides and diagrams.
+A collection of interactive presentations built with Remark.js covering various topics from problem-solving approaches to modern language usage and life skills.
 
 ## Project Structure
 
-- `problem_solving_process.html` - Main presentation file with slides and styling
+- `modern_slang_guide.html` - Interactive guide to modern slang and terminology
+- `phrases_used_in_daily_life.html` - Common phrases and their usage in everyday situations
+- `problem_solving_process.html` - Strategic problem-solving approaches and methodologies
+- `software_development_startup_phases.html` - Guide to different phases in software startup development
+- `ten_slides_about_life_stuff.html` - Collection of life-related topics and insights
 - `problemsolvingmermaid.md` - Source file containing Mermaid diagram syntax
 - `convert-mermaid.js` - Script to convert Mermaid diagrams to SVG
 - `problem-solving-diagram.svg` - Generated SVG from Mermaid diagram
@@ -19,7 +20,7 @@ A presentation system built with Remark.js that demonstrates strategic problem-s
 
 1. Write diagrams in Mermaid syntax in `problemsolvingmermaid.md`
 2. Use `convert-mermaid.js` to transform them into SVG files
-3. Reference the generated SVG files in the presentation
+3. Reference the generated SVG files in the presentations
 
 ## Setup
 
@@ -58,39 +59,40 @@ node convert-mermaid.js
 
 ### Dependencies
 
-- Remark.js for slide presentation
+- Remark.js for slide presentations
 - @mermaid-js/mermaid-cli for diagram conversion
 - Custom fonts (Yanone Kaffeesatz, Droid Serif, Ubuntu Mono)
 
 ### Styling
 
-The presentation includes custom CSS for:
-- Color-coded probability indicators
-- Two-column layouts
-- Impact matrices
-- Framework diagrams
+The presentations include custom CSS for:
+- Content organization and layout
+- Visual hierarchy
+- Interactive elements
+- Responsive design
 - Highlighted sections
 
-## Viewing the Presentation
+## Viewing the Presentations
 
-1. Open `problem_solving_process.html` in a web browser
+1. Open any of the HTML files in a web browser (e.g., `modern_slang_guide.html`)
 2. Use arrow keys or click to navigate slides
-3. Click on diagram links to view full-size versions in new tabs
+3. Click on any diagram links to view full-size versions in new tabs
 
 ## Development
 
-To modify the presentation:
+To modify or create new presentations:
 
-1. Edit `problem_solving_process.html` to update slides
-2. Update styles in the `<style>` section
-3. For diagrams:
+1. Use any existing presentation file as a template
+2. Update content in the HTML file
+3. Modify styles in the `<style>` section as needed
+4. For diagrams:
    - Edit `problemsolvingmermaid.md`
    - Run conversion script
    - Update references in slides
 
 ## Browser Compatibility
 
-The presentation is tested and works in modern browsers:
+The presentations are tested and work in modern browsers:
 - Chrome
 - Firefox
 - Safari
