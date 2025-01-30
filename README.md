@@ -1,123 +1,86 @@
-# Remark.js Presentation Collection
+# Phases of Life Presentation
 
-A collection of interactive presentations built with Remark.js covering various topics from problem-solving approaches to modern language usage and life skills.
+A comprehensive presentation that explores the ten major phases of human life, from infancy to senior years. Each phase is illustrated with key points, essential actions, and detailed Mermaid diagrams.
 
-## Content Categories
+## Project Structure
 
-### Business & Investment
-- `web3_investor_questions.html` - Critical questions and case studies for Web3 investment evaluation
-- `software_development_startup_phases.html` - Guide to different phases in software startup development
-
-### Educational
-- `problem_solving_process.html` - Strategic problem-solving approaches and methodologies
-- `problemsolvingmermaid.md` - Source file containing Mermaid diagram syntax
-- `problem-solving-diagram.svg` - Generated SVG from Mermaid diagram
-
-### Language & Communication
-- `modern_slang_guide.html` - Interactive guide to modern slang and terminology
-- `phrases_used_in_daily_life.html` - Common phrases and their usage in everyday situations
-
-### Life Skills
-- `ten_slides_about_life_stuff.html` - Collection of life-related topics and insights
-
-### Technical Files
-- `convert-mermaid.js` - Script to convert Mermaid diagrams to SVG
-- `package.json` - Project dependencies and configuration
-
-## Important Note About Mermaid
-
-⚠️ Remark.js does not natively support Mermaid diagrams. This project implements a workaround:
-
-1. Write diagrams in Mermaid syntax in `problemsolvingmermaid.md`
-2. Use `convert-mermaid.js` to transform them into SVG files
-3. Reference the generated SVG files in the presentations
-
-## Setup
-
-1. Install dependencies:
-```bash
-npm install
+```
+.
+├── phases_of_life.html          # Main presentation file
+└── life_phase_diagrams/         # Directory containing phase diagrams
+    ├── phase1_infancy.md        # Mermaid diagram source
+    ├── phase1_infancy.svg       # Generated diagram
+    ├── phase2_childhood.md
+    ├── phase2_childhood.svg
+    └── ... (and so on for all phases)
 ```
 
-2. Convert Mermaid diagrams to SVG:
-```bash
-node convert-mermaid.js
-```
+## Features
 
-## Creating/Updating Diagrams
+- 10 detailed life phases with age ranges
+- Interactive presentation using Remark.js
+- Key points for each life phase
+- Unique action verbs for each phase
+- Visual diagrams showing relationships and developments
+- Links to SVG visualizations that open in new tabs
 
-1. Edit the Mermaid diagram in `problemsolvingmermaid.md`
-2. Run the conversion script:
-```bash
-node convert-mermaid.js
-```
-3. The script will generate `problem-solving-diagram.svg`
-4. Reference the SVG in your slides using:
-```html
-<a href="problem-solving-diagram.svg" target="_blank">...</a>
-```
+## Life Phases Covered
 
-## Presentation Features
+1. Infancy (0-2 years)
+2. Early Childhood (2-5 years)
+3. School Age (6-12 years)
+4. Adolescence (13-19 years)
+5. Young Adulthood (20-29 years)
+6. Career Building (30-39 years)
+7. Mid-Life (40-49 years)
+8. Mature Adulthood (50-64 years)
+9. Retirement (65-75 years)
+10. Senior Years (75+ years)
 
-- Content Organization
-  - Two-column layouts for content organization
-  - Question-and-answer format with highlighted sections
-  - Warning blocks for important cautions
-  - External reference links to source materials
+## Technology Stack
 
-- Visual Design
-  - Responsive design with custom styling
-  - Custom SVG diagrams for visualization
-  - Distinct styling for questions and examples
-  - Color-coded sections for different content types
+- HTML5
+- CSS3
+- Remark.js for presentations
+- Mermaid for diagrams
+- SVG for visualization
 
-- Interaction
-  - Interactive navigation
-  - Mobile-friendly interface
-  - External link handling in new tabs
+## How to Use
 
-## Technical Details
+1. Open `phases_of_life.html` in a web browser
+2. Navigate through slides using:
+   - Arrow keys (←/→)
+   - Spacebar
+   - Enter key
+3. Click on "View Phase Visualization" links to see detailed diagrams in new tabs
 
-### Dependencies
+## Diagram Generation
 
-- Remark.js for slide presentations
-- @mermaid-js/mermaid-cli for diagram conversion
-- Custom fonts (Yanone Kaffeesatz, Droid Serif, Ubuntu Mono)
+The project uses Mermaid diagrams to visualize each life phase. The diagrams are:
+- Written in Mermaid markdown syntax (.md files)
+- Converted to SVG format for viewing
+- Linked from the main presentation
 
-### Styling
+## Styling
 
-The presentations include custom CSS for:
-- Content organization and layout
-- Visual hierarchy with distinct section types:
-  - Question blocks with blue accent
-  - Example blocks with red accent
-  - Warning sections with attention markers
-- Interactive elements and hover states
-- Responsive design for all screen sizes
-- External link formatting
-
-## Viewing the Presentations
-
-1. Open any of the HTML files in a web browser (e.g., `modern_slang_guide.html`)
-2. Use arrow keys or click to navigate slides
-3. Click on any diagram links to view full-size versions in new tabs
+The presentation features:
+- Clean, modern design
+- Consistent color scheme
+- Responsive layout
+- Right-aligned verb boxes
+- Gradient backgrounds
+- Custom typography using Roboto font
 
 ## Development
 
-To modify or create new presentations:
+To modify the presentation:
+1. Edit `phases_of_life.html` for content changes
+2. Modify Mermaid files in `life_phase_diagrams/` for diagram changes
+3. Run the diagram converter to update SVGs
+4. Test in a web browser
 
-1. Use any existing presentation file as a template
-2. Update content in the HTML file
-3. Modify styles in the `<style>` section as needed
-4. For diagrams:
-   - Edit `problemsolvingmermaid.md`
-   - Run conversion script
-   - Update references in slides
+## Requirements
 
-## Browser Compatibility
-
-The presentations are tested and work in modern browsers:
-- Chrome
-- Firefox
-- Safari
-- Edge
+- Modern web browser with JavaScript enabled
+- No server required (runs locally)
+- Mermaid diagram converter for updating visualizations

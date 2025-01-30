@@ -2,24 +2,23 @@ const fs = require('fs');
 const { exec } = require('child_process');
 const path = require('path');
 
-// Read the mermaid content from the markdown file
-const markdownContent = fs.readFileSync('problemsolvingmermaid.md', 'utf8');
+// Get input and output filenames from command line arguments
+const inputFile = process.argv[2];
+const outputFile = process.argv[3];
 
-// Extract the mermaid diagram content (between ```mermaid and ```)
-const mermaidMatch = markdownContent.match(/```mermaid\s*([\s\S]*?)```/);
-
-if (!mermaidMatch) {
-    console.error('No mermaid diagram found in the markdown file');
+if (!inputFile || !outputFile) {
+    console.error('Usage: node convert-mermaid.js <input-file> <output-file>');
     process.exit(1);
 }
 
+// Read the mermaid content from the markdown file
+const mermaidContent = fs.readFileSync(inputFile, 'utf8');
+
 // Save the mermaid content to a temporary file
-const mermaidContent = mermaidMatch[1];
 const tempFile = 'temp-diagram.mmd';
 fs.writeFileSync(tempFile, mermaidContent);
 
 // Convert to SVG using mmdc
-const outputFile = 'problem-solving-diagram.svg';
 const mmdc = path.join('node_modules', '.bin', 'mmdc');
 
 const command = `"${mmdc}" -i "${tempFile}" -o "${outputFile}"`;
