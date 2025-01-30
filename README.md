@@ -1,86 +1,117 @@
-# Phases of Life Presentation
+# Software Development and Business Documentation
 
-A comprehensive presentation that explores the ten major phases of human life, from infancy to senior years. Each phase is illustrated with key points, essential actions, and detailed Mermaid diagrams.
+This repository contains various presentations and documentation about software development, business processes, and lifecycle management.
 
-## Project Structure
+## Repository Structure
 
 ```
 .
-├── phases_of_life.html          # Main presentation file
-└── life_phase_diagrams/         # Directory containing phase diagrams
-    ├── phase1_infancy.md        # Mermaid diagram source
-    ├── phase1_infancy.svg       # Generated diagram
-    ├── phase2_childhood.md
-    ├── phase2_childhood.svg
-    └── ... (and so on for all phases)
+├── software_lifecycle_business/           # Software Lifecycle Business Perspective
+│   ├── diagrams/                         # SVG diagrams for lifecycle slides
+│   │   ├── slide1_planning.svg
+│   │   ├── slide2_budget.svg
+│   │   └── ... (other lifecycle diagrams)
+│   └── life_cycle_of_developing_software_from_a_business_perspective.html
+│
+├── life_phase_diagrams/                  # Life Phases Documentation
+│   ├── phase1_infancy.md                 # Infancy phase diagram source
+│   ├── phase1_infancy.svg               
+│   ├── phase2_childhood.md               # Childhood phase diagram source
+│   ├── phase2_childhood.svg
+│   └── ... (other life phase diagrams)
+│
+├── Presentations
+│   ├── software_development_startup_phases.html    # Startup phases presentation
+│   ├── phases_of_life.html                        # Life phases presentation
+│   ├── tech_innovation_impact.html                # Tech innovation impact
+│   ├── web3_creating_a_company.html               # Web3 company creation guide
+│   └── web3_investor_questions.html               # Web3 investor FAQ
+│
+├── Business Documentation
+│   ├── burnout_awareness.html                     # Burnout awareness guide
+│   ├── getting_a_client_to_commit.html           # Client commitment strategies
+│   ├── igaming_b2b_guide.html                    # iGaming B2B guide
+│   └── modern_slang_guide.html                   # Modern business slang guide
+│
+├── Mermaid Diagrams
+│   ├── burnout_definition.md                     # Burnout definition diagram
+│   ├── burnout_definition.svg
+│   ├── burnout_signs.md                         # Burnout signs diagram
+│   ├── burnout_signs.svg
+│   ├── communication_management.md               # Communication flow diagram
+│   ├── communication_management.svg
+│   └── ... (other business process diagrams)
+│
+└── Tools
+    ├── check_and_convert_mermaid.js             # Mermaid conversion utility
+    └── convert-mermaid.js                       # Mermaid to SVG converter
 ```
+
+## Presentations
+
+### Software Development
+- **Software Development Startup Phases**: Comprehensive guide through startup development phases
+- **Software Lifecycle Business Perspective**: Business view of software development lifecycle
+- **Tech Innovation Impact**: Analysis of technological innovation impact
+
+### Web3
+- **Creating a Web3 Company**: Guide to establishing Web3 businesses
+- **Web3 Investor Questions**: Common investor questions and answers
+
+### Life and Business
+- **Phases of Life**: Documentation of life phases and transitions
+- **Business Communication**: Modern business communication guides
+- **B2B Guides**: Specialized B2B interaction guides
+
+## Diagrams
+
+### Types of Diagrams
+1. **Life Phase Diagrams**: Visual representations of life stages
+2. **Business Process Diagrams**: 
+   - Communication Management
+   - Market Innovation
+   - Sustainable Change
+   - Tech Innovation Cycle
+3. **Health and Wellness**:
+   - Burnout Definition
+   - Burnout Signs
+   - Prevention Strategies
+   - Recovery Steps
+
+## Tools and Utilities
+
+### Mermaid Conversion Tools
+- `check_and_convert_mermaid.js`: Validates and converts Mermaid syntax
+- `convert-mermaid.js`: Converts Mermaid diagrams to SVG format
+
+## Viewing Presentations
+
+1. Open any HTML presentation in a web browser
+2. Navigate using:
+   - Arrow keys (left/right)
+   - Spacebar
+   - Mouse clicks
+
+## Viewing Diagrams
+
+Each diagram is available in two formats:
+- `.md` files contain the Mermaid source code
+- `.svg` files contain the rendered diagrams
+
+To view SVG diagrams:
+1. Click diagram links in presentations (opens in new tab)
+2. Or open SVG files directly in a web browser
 
 ## Features
 
-- 10 detailed life phases with age ranges
-- Interactive presentation using Remark.js
-- Key points for each life phase
-- Unique action verbs for each phase
-- Visual diagrams showing relationships and developments
-- Links to SVG visualizations that open in new tabs
+### Presentation Features
+- Responsive layouts
+- Color-coded content categories
+- Interactive navigation
+- Linked diagrams and resources
 
-## Life Phases Covered
-
-1. Infancy (0-2 years)
-2. Early Childhood (2-5 years)
-3. School Age (6-12 years)
-4. Adolescence (13-19 years)
-5. Young Adulthood (20-29 years)
-6. Career Building (30-39 years)
-7. Mid-Life (40-49 years)
-8. Mature Adulthood (50-64 years)
-9. Retirement (65-75 years)
-10. Senior Years (75+ years)
-
-## Technology Stack
-
-- HTML5
-- CSS3
-- Remark.js for presentations
-- Mermaid for diagrams
-- SVG for visualization
-
-## How to Use
-
-1. Open `phases_of_life.html` in a web browser
-2. Navigate through slides using:
-   - Arrow keys (←/→)
-   - Spacebar
-   - Enter key
-3. Click on "View Phase Visualization" links to see detailed diagrams in new tabs
-
-## Diagram Generation
-
-The project uses Mermaid diagrams to visualize each life phase. The diagrams are:
-- Written in Mermaid markdown syntax (.md files)
-- Converted to SVG format for viewing
-- Linked from the main presentation
-
-## Styling
-
-The presentation features:
-- Clean, modern design
-- Consistent color scheme
-- Responsive layout
-- Right-aligned verb boxes
-- Gradient backgrounds
-- Custom typography using Roboto font
-
-## Development
-
-To modify the presentation:
-1. Edit `phases_of_life.html` for content changes
-2. Modify Mermaid files in `life_phase_diagrams/` for diagram changes
-3. Run the diagram converter to update SVGs
-4. Test in a web browser
-
-## Requirements
-
-- Modern web browser with JavaScript enabled
-- No server required (runs locally)
-- Mermaid diagram converter for updating visualizations
+### Diagram Features
+- Clear visual hierarchy
+- Consistent color schemes
+- Detailed annotations
+- SVG format for high-quality scaling
